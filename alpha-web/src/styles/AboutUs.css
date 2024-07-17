@@ -1,0 +1,39 @@
+.aboutus-page{
+    margin: 0;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 50em);
+    grid-template-rows: 8em 50em 20em;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+.about-image{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+}
+.imagen-plano{
+    height: auto;
+    width: 50em;
+    margin-top: 500px;
+}
+.text-about{
+    padding: 0;
+}
+
+.mv-section{
+    grid-column: 3 / -3;
+    grid-row: 3 / -2;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
