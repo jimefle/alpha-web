@@ -77,7 +77,7 @@ a {
     left: 0;
     display: block;
     border-radius: 28px;
-    background: var(--second-color);
+    background: var(--third-color);
     width: 40px;
     height: 40px;
     transition: all .3s ease;
@@ -110,7 +110,7 @@ a {
   
   .cta:hover::before {
     width: 100%;
-    background: var(--second-color); 
+    background: var(--third-color); 
   }
   
   .cta:hover svg {

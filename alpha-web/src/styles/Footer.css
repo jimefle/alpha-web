@@ -45,11 +45,9 @@
     height: 4em;
   }
 
-a{
-    color: white;
-}
 .icons{
     padding-left: 40px;
     padding-right: 20px;
     font-size: 30px;
+    color: white;
 }
