@@ -1,10 +1,14 @@
 import '/src/styles/Header.css'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
     return(
+      <div>
+        
         <header>
-      
         <img src="./src/image/logo-alpha.jpeg" className='logo-image' alt="Logo AlphaScope" />
         <div>
           <Link to="/" className="header-links">Inicio</Link>
@@ -15,6 +19,18 @@ const Header = () => {
           <button>Contacto</button>
         </div>
       </header>
+      <div>
+        <nav>
+            <FontAwesomeIcon icon={faEnvelope} />
+            <a href="mailto:contacto@alphascope.com.ar" className='contact-line'>contacto@alphascope.com.ar</a>
+            <FontAwesomeIcon icon={faWhatsapp} />
+            <a href="https://wa.me/543435093106" className='contact-line'>+54 343 5 093106</a>
+            <FontAwesomeIcon icon={faWhatsapp} />
+            <a href="" className='contact-line'>+54 343 4 341791</a>
+          </nav>
+        </div>
+      </div>
+        
     )
 }
 
