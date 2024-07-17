@@ -1,4 +1,5 @@
 import '/src/styles/Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return(
@@ -6,11 +7,11 @@ const Header = () => {
       
         <img src="./src/image/logo-alpha.jpeg" className='logo-image' alt="Logo AlphaScope" />
         <div>
-          <a href="" className='header-links'>Inicio</a>
-          <a href="" className='header-links'>Productos</a>
-          <a href="" className='header-links'>Servicios</a>
-          <a href="" className='header-links'>Blog</a>
-          <a href="" className='header-links'>Empresa</a>
+          <Link to="/" className="header-links">Inicio</Link>
+          <Link to="/products" className="header-links">Productos</Link>
+          <Link to="/services" className="header-links">Servicios</Link>
+          <Link to="/blog" className="header-links">Blog</Link>
+          <Link to="/about-us" className="header-links">Empresa</Link>
           <button>Contacto</button>
         </div>
       </header>
