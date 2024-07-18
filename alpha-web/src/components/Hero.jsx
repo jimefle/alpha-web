@@ -1,5 +1,5 @@
 import '/src/styles/Hero.css'
-
+import { Link } from 'react-router-dom'
 export default function Hero() {
     return (
         <section>
@@ -17,35 +17,35 @@ export default function Hero() {
                 <article>
                     <h2>Empresa</h2>
                     <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
-                    <a href="#" className="cta">
+                    <Link to="/about-us" className="cta" preventScrollReset={false}>
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
-                    </a>
+                    </Link>
                 </article>
                 <article>
                     <h2>Servicios</h2>
                     <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
-                    <a href="#" className="cta">
+                    <Link to="/services" className="cta">
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
-                    </a>
+                    </Link>
                 </article>
                 <article>
                     <h2>Productos</h2>
                     <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
-                    <a href="#" className="cta">
+                    <Link to="/products" className="cta">
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
-                    </a>
+                    </Link>
                 </article>
             </section>
         </section>

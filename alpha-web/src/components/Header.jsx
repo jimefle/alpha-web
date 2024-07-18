@@ -27,11 +27,11 @@ const Header = () => {
           </div>
           <div>
             <FontAwesomeIcon icon={faWhatsapp} />
-            <a href="https://wa.me/543435093106" className='contact-line'>+54 343 5 093106</a>
+            <a href="https://wa.me/543435093106" className='contact-line' target="_blank">+54 343 5 093106</a>
           </div>
           <div>
             <FontAwesomeIcon icon={faWhatsapp} />
-            <a href="" className='contact-line'>+54 343 4 341791</a>
+            <a href="" className='contact-line' target="_blank">+54 343 4 341791</a>
           </div>
           </nav>
         </div>

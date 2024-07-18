@@ -7,10 +7,12 @@ const ImageCarousel = () => {
   return (
     <Carousel
       autoPlay
-      interval={4000} // Intervalo en milisegundos
+      interval={3000} // Intervalo en milisegundos
       infiniteLoop
       showThumbs={false}
       showStatus={false}
+      centerMode
+      centerSlidePercentage={70}
     >
       <div  className="carousel-image">
         <img src="./src/image/carousel1.jpg" alt="Imagen 1" />

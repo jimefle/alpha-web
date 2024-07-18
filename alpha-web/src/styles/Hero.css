@@ -16,7 +16,16 @@
     padding: 50px;
     background: white;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
+
+.main-section h1{
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+}
+
 p{
     padding-left: 300px;
     padding-right: 300px;
@@ -88,10 +97,6 @@ article:hover{
 
 }
 
-h1{
-    font-size: 30px;
-
-}
 h2{
     font-size: 25px;
 }
@@ -127,10 +132,10 @@ a {
   
   .cta span {
     position: relative;
-    font: inherit;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: .25em;
     text-transform: uppercase;
     vertical-align: middle;

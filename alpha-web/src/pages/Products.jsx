@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Product from "../components/Product"
 import '../styles/Products.css'
 const Products = () => {
-    const [activeSection, setActiveSection] = useState('')
+    const [activeSection, setActiveSection] = useState('veterinarios')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,7 +31,7 @@ const Products = () => {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    
+
     return (
         <div className='products-page'>
             <nav className="nav-products">
@@ -83,7 +83,14 @@ const Products = () => {
             </section>
 
             <div className="contact-prod-section">
-
+                <h1>Más información...</h1>
+                <a href="mailto:contacto@alphascope.com.ar" className="cta">
+                        <span>Contactanos</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                </a>
             </div>
         </div>
         
