@@ -1,0 +1,60 @@
+.products-page{
+    margin: 80px;
+    margin-top: 30px;
+}
+.nav-products{
+    position: sticky;
+    top: 80px;
+    z-index:2;
+    padding: 5px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background: rgba(205, 199, 229, 0.529);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.products-display{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+h1{
+    color: black;
+    text-align: start;
+    margin-top: 30px;
+}
+
+
+.contact-prod-section{
+    height: 300px;
+}
+
+.nav-items{
+    border-radius: 25px;
+    padding: 3px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-items:hover{
+    background: rgba(205, 199, 229, 1);
+}
+
+.nav-items.active {
+    background: rgb(191, 182, 228); 
+    color: black; 
+}
+
+/*
+<nav className="nav-products">
+                <a href="#veterinarios" className={`nav-items ${activeSection === 'veterinarios' ? 'active' : ''}`}>Veterinarios</a>
+                <a href="#industriales" className={`nav-items ${activeSection === 'industriales' ? 'active' : ''}`}>Industriales</a>
+                <a href="#mobiliario" className={`nav-items ${activeSection === 'mobiliario' ? 'active' : ''}`}>Mobiliario</a>
+            </nav>
+*/
