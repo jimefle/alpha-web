@@ -12,7 +12,6 @@ export default function Hero() {
                     En el rubro industrial, proveemos equipos como boroscopios y cámaras de inspección de tuberías, satisfaciendo una amplia gama 
                     de necesidades en el ámbito de las inspecciones técnicas no destructivas. 
                 </p>
-                <p>Nuestros proveedores son fabricantes lo que nos permite ofrecer mejores precios. </p>
             </section>
             <section className="card-section">
                 <article>
