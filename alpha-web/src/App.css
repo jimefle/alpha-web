@@ -64,39 +64,27 @@ p {
 #root {
   margin: 0;
   text-align: center;
+  min-height: 100vh;
 }
 
-body{
+html, body{
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  height: 100%;
 }
-
-main{
-  width: 100%;
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.super-contenedor {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-nav{
-  background: var(--second-color);
-  color: black;
-  padding-top: 4em;
-  padding-left: 10px;
-  display: flex;
-  justify-content: start;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.contact-line{
-  font-size: 1em;
-  padding-right: 20px;
-  padding-left: 10px;
-  color: black;
-  text-decoration: none;
+main{
+  flex: 1;
+  
 }
 
 .float{

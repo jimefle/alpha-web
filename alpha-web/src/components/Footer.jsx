@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 export default function Footer(){
     return(
-        <section>
-            <section className="footer-footer">
+            <section className="footer">
                 <img src="./src/image/logo-alpha.jpeg" className='logo-image' alt="Logo AlphaScope" />
                 <div>
                     <a href="https://instagram.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
@@ -18,6 +17,6 @@ export default function Footer(){
                     </a>
                 </div>
             </section>
-        </section>
+
     )
 }

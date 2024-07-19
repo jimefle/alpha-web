@@ -31,11 +31,11 @@
       padding: 40px;
       padding-left: 150px;
       padding-right: 150px;
-      gap: 150px;
+      gap: 100px;
     }
   
     .mv-card {
-      width: 30em;
+      width: 35em;
     }
   }
   
@@ -46,7 +46,7 @@
       padding: 30px;
       padding-left: 40px;
       padding-right: 40px;
-      gap: 30px;
+      gap: 20px;
     }
   
     .mv-card {

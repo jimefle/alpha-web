@@ -1,0 +1,90 @@
+@import url('../App.css');
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .user-info form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-info label {
+    text-align: start;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .user-info input,
+  .user-info textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .user-info button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--third-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .alpha-info {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .alpha-info h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .alpha-info h5 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .alpha-info strong {
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-page {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .user-info,
+    .alpha-info {
+      width: 45%;
+    }
+  
+    .alpha-info h1 {
+      text-align: left;
+    }
+  
+    .alpha-info h5 {
+      text-align: left;
+    }
+  }
+  
