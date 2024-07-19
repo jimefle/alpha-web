@@ -1,48 +1,47 @@
+@import url('../App.css');
+
 .products-page{
     margin: 80px;
     margin-top: 30px;
+
 }
 .nav-products{
     position: sticky;
     top: 80px;
     z-index:2;
     padding: 5px;
-    margin-left: 600px;
-    margin-right: 600px;
-    background: rgba(205, 199, 229, 0.529);
+    background: var(--third-color-50);
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    margin: 0 35%;
 }
+
+.nav-items{
+    border-radius: 25px;
+    padding: 3px 16px;
+    transition: all 0.5s ease-in-out;
+}
+
 .products-display{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
-
 }
 
-h1{
+.products-page h2{
     color: black;
     text-align: start;
     margin-top: 30px;
 }
 
-.nav-items{
-    border-radius: 25px;
-    padding: 3px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: all 0.5s ease-in-out;
-}
-
 .nav-items:hover{
-    background: rgba(205, 199, 229, 1);
+    background: var(--third-color);
 }
 
 .nav-items.active {
-    background: rgb(191, 182, 228); 
+    background: var(--third-color); 
     color: black; 
 }
 
@@ -53,3 +52,36 @@ h1{
     align-items: center;
     flex-direction: column;
 }
+
+@media (max-width: 1340px) {
+    .nav-products {
+      margin: 0 30%; 
+    }
+  }
+
+@media (max-width: 1024px) {
+    .nav-products {
+      margin: 0 20%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-products {
+      margin: 0 2%;
+    }
+  
+    .nav-items {
+      padding: 5px 10px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-products {
+      margin: 0 1%;
+    }
+  
+    .nav-items {
+      font-size: 14px; 
+      padding: 5px 8px;
+    }
+  }

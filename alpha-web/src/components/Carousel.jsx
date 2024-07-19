@@ -17,19 +17,19 @@ const ImageCarousel = () => {
       <div  className="carousel-image">
         <img src="./src/image/carousel1.jpg" alt="Imagen 1" />
         <div className="contenedor">
-          <h1 className="carousel-text">Equipos médicos para veterinarios<span>&#160;</span></h1>
+          <h2 className="carousel-text">Equipos médicos para veterinarios<span>&#160;</span></h2>
         </div>
       </div>
       <div className="carousel-image">
         <img src="./src/image/carousel2.jpg" alt="Imagen 2" />
         <div className="contenedor">
-          <h1 className="carousel-text">Endoscopios industriales<span>&#160;</span></h1>
+          <h2 className="carousel-text">Endoscopios industriales<span>&#160;</span></h2>
         </div>
       </div>
       <div className="carousel-image">
         <img src="./src/image/carousel3.jpg" alt="Imagen 3" />
         <div className="contenedor">
-          <h1 className="carousel-text">Servicios profesionales para profesionales<span>&#160;</span></h1>
+          <h2 className="carousel-text">Servicios profesionales para profesionales<span>&#160;</span></h2>
         </div>
       </div>
     </Carousel>

@@ -1,6 +1,6 @@
-/* src/Footer.css */
+@import url('../App.css');
 .footer {
-    background: linear-gradient(to right, rgb(55,144,187), rgb(39, 102, 134));
+    background: linear-gradient(to right, var(--alpha-color), var(--alpha-color-doble));
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
   }
 
   .footer-footer{
-    background: linear-gradient(to right, rgb(55,144,187), rgb(39, 102, 134));
+    background: linear-gradient(to right, var(--alpha-color), var(--alpha-color-doble));
     height: 200px;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 @media (max-width: 1024px) {
   .footer-footer{
     justify-content: center;
-    background: rgb(55,144,187);
+    background: var(--alpha-color);
   }
 }
 
@@ -43,7 +43,7 @@
 @media (max-width: 768px) {
   .footer-footer{
     justify-content: center;
-    background: rgb(55,144,187);
+    background: var(--alpha-color);
     gap: 0px;
   }
   .logo-image{
@@ -57,7 +57,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    background: rgb(55,144,187);
+    background: var(--alpha-color);
     gap: 10px;
   }
   .logo-image{

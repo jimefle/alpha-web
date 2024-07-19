@@ -5,7 +5,7 @@ export default function Hero() {
         <section>
             <section className='main-section'>
                 <h1>ALPHASCOPE</h1>
-                <p>SOMOS ESPECIALISTAS EN ENDOSCOPIA VETERINARIA E INDUSTRIAL.</p>
+                <h5>SOMOS ESPECIALISTAS EN ENDOSCOPIA VETERINARIA E INDUSTRIAL</h5>
                 <p>Comercializamos equipos médicos para uso veterinario. Entendemos la importancia para los profesionales veterinarios de contar
                     con equipos confiables para obtener los mejores resultados que les permitan realizar su trabajo enfocándose en sus pacientes, 
                     delegando en nosotros la atención de sus equipos e instrumental de trabajo. 
@@ -15,8 +15,8 @@ export default function Hero() {
             </section>
             <section className="card-section">
                 <article>
-                    <h2>Empresa</h2>
-                    <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+                    <h3>Empresa</h3>
+                    <h6> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h6>
                     <Link to="/about-us" className="cta" preventScrollReset={false}>
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -26,8 +26,8 @@ export default function Hero() {
                     </Link>
                 </article>
                 <article>
-                    <h2>Servicios</h2>
-                    <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+                    <h3>Servicios</h3>
+                    <h6> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h6>
                     <Link to="/services" className="cta">
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -37,8 +37,8 @@ export default function Hero() {
                     </Link>
                 </article>
                 <article>
-                    <h2>Productos</h2>
-                    <h3> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+                    <h3>Productos</h3>
+                    <h6> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h6>
                     <Link to="/products" className="cta">
                         <span>Ver más</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">

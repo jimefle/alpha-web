@@ -11,14 +11,14 @@ const AboutUs = () => {
             <section className="mv-section">
                 <section className='mv-card'>
                     <h2>Visión</h2>
-                    <h3>Convertirnos en referentes en el mercado de los equipos médicos veterinarios y en el área de la endoscopia 
-                        industrial, ofreciendo productos y servicios de calidad y al mejor precio. </h3>
+                    <h5>Convertirnos en referentes en el mercado de los equipos médicos veterinarios y en el área de la endoscopia 
+                        industrial, ofreciendo productos y servicios de calidad y al mejor precio. </h5>
                 </section>
                 <section className='mv-card'>
                     <h2>Misión</h2>
-                    <h3>Proveer a los profesionales de los equipos necesarios que les permitan realizar su trabajo de forma eficiente, 
+                    <h5>Proveer a los profesionales de los equipos necesarios que les permitan realizar su trabajo de forma eficiente, 
                         con equipamiento de vanguardia y asequibles, cuidando todo el proceso de adquisición de sus equipos sabiendo que 
-                        en todo momento cuentan con el apoyo técnico necesario.</h3>
+                        en todo momento cuentan con el apoyo técnico necesario.</h5>
                 </section>
             </section>
         </section>

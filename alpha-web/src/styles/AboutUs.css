@@ -16,17 +16,13 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background: rgba(205, 199, 229, 0.562);
+    background: var(--third-color-50);
     gap: 200px;
     padding-left: 200px;
     padding-right: 200px;
-    
 }
 .mv-card{
     width: 35em;
-}
-.mv-card h3{
-    font-weight: 450;
 }
 
 /* Media query for medium screens */

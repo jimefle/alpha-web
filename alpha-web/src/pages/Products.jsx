@@ -6,7 +6,7 @@ const Products = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll('h1[id]');
+            const sections = document.querySelectorAll('h2[id]');
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
                 const sectionBottom = sectionTop + section.offsetHeight;
@@ -55,7 +55,7 @@ const Products = () => {
                 </div>
             </nav>
 
-            <h1 id="veterinarios">Veterinarios</h1>
+            <h2 id="veterinarios">Veterinarios</h2>
             <section className="products-display">
                 <Product image={'./src/image/products/imagen4.jpg'} name={"Monitores multiparamétricos"}/>
                 <Product image={'./src/image/products/imagen5.jpg'} name={"ECG"}/>
@@ -67,7 +67,7 @@ const Products = () => {
                 <Product image={'./src/image/products/imagen10.jpg'} name={"Estufas y autoclaves"}/>
             </section>
 
-            <h1 id="industriales">Industriales</h1>
+            <h2 id="industriales">Industriales</h2>
             <section className="products-display">
                 <Product image={'./src/image/products/imagen11.jpg'} name={"Boroscopio"}/>
                 <Product image={'./src/image/products/imagen12.jpg'} name={"Cámaras de inspección de tuberías"}/>
@@ -75,7 +75,7 @@ const Products = () => {
                 <Product image={'./src/image/products/imagen13.jpg'} name={"Detectores"}/>
             </section>
 
-            <h1 id="mobiliario">Mobiliario</h1>
+            <h2 id="mobiliario">Mobiliario</h2>
             <section className="products-display">
                 <Product image={'./src/image/products/imagen14.jpg'} name={"Carro de transporte para torre de endoscopia"}/>
                 <Product image={'./src/image/products/imagen15.jpg'} name={"Mesa de exploración veterinaria"}/>
@@ -83,7 +83,7 @@ const Products = () => {
             </section>
 
             <div className="contact-prod-section">
-                <h1>Más información...</h1>
+                <h2>Más información...</h2>
                 <a href="mailto:contacto@alphascope.com.ar" className="cta">
                         <span>Contactanos</span>
                         <svg width="13px" height="10px" viewBox="0 0 13 10">
