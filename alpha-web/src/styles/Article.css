@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .article-info{
     text-align: start;
