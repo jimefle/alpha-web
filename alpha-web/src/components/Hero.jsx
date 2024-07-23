@@ -37,12 +37,6 @@ export default function Hero() {
             <section className='main-section'>
                 <h1>ALPHASCOPE</h1>
                 <UnderlinedHeader />
-                <p>Comercializamos equipos médicos para uso veterinario. Entendemos la importancia para los profesionales veterinarios de contar
-                    con equipos confiables para obtener los mejores resultados que les permitan realizar su trabajo enfocándose en sus pacientes, 
-                    delegando en nosotros la atención de sus equipos e instrumental de trabajo. 
-                    En el rubro industrial, proveemos equipos como boroscopios y cámaras de inspección de tuberías, satisfaciendo una amplia gama 
-                    de necesidades en el ámbito de las inspecciones técnicas no destructivas. 
-                </p>
             </section>
             <section className="card-section">
                 <article>

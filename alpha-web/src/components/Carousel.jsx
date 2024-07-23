@@ -7,7 +7,7 @@ const ImageCarousel = () => {
   return (
     <Carousel
       autoPlay
-      interval={5000} // Intervalo en milisegundos
+      interval={3000} // Intervalo en milisegundos
       infiniteLoop
       showThumbs={false}
       showStatus={false}

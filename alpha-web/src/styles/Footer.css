@@ -2,7 +2,7 @@
 .footer {
     position: relative;
     width: 100%;
-    background: linear-gradient(to right, var(--alpha-color), var(--alpha-color-doble));
+    background: linear-gradient(to right, var(--alpha-color), var(--alpha-color) ,var(--alpha-color-doble));
     height: 200px;
     display: flex;
     justify-content: space-between;

@@ -22,18 +22,18 @@
 
 .article-section .article-info .text-article:first-of-type{
   background-color: var(--second-color);
-  padding-left: 20px;
-  clip-path: polygon(3% 0%, 95% 0%, 91% 100%, 0% 100%);
+  padding-left: 10px;
+  clip-path: polygon(0% 0%, 95% 0%, 91% 100%, 0% 100%);
 }
 .article-image{
   width: 100%;
-
 }
 .imagen-article{
     margin-top: 70px;
     margin-right: 200px;
-    height: 600px;
-}
+    height: 500px;
+    
+  }
 
 @media (max-width: 1500px) {
     .article-info {
