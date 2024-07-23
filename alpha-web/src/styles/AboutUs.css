@@ -16,15 +16,20 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background: var(--third-color-50);
-    gap: 200px;
+    background: var(--second-color-50);
+    gap: 150px;
     padding-left: 200px;
     padding-right: 200px;
 }
 .mv-card{
     width: 35em;
 }
-
+.mv-card h2{
+  margin: 20px 0px;
+}
+.mv-card h6{
+  margin: 0px 10px;
+}
 /* Media query for medium screens */
 @media (max-width: 1024px) {
     .mv-section {

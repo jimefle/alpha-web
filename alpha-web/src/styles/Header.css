@@ -41,8 +41,8 @@
   }
   
   .header-links:hover{
-    color: var(--third-color);
-    text-decoration: underline 2px var(--third-color);
+    color: var(--second-color);
+    text-decoration: underline 2px var(--second-color);
   }
 
   button{

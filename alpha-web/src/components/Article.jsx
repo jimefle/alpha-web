@@ -8,7 +8,7 @@ const  Article = ({ title, text, image }) => {
             <section className="article-info">
                 <h1>{title}</h1>
                 {texts.map((para, index) => (
-                    <p key={index} className='text-article'>{para.trim()}.</p>
+                    <p key={index} className="text-article">{para.trim()}.</p>
                 ))}
             </section>
             <section className="article-image">

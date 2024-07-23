@@ -1,11 +1,42 @@
 import '/src/styles/Hero.css'
 import { Link } from 'react-router-dom'
+import { useEffect, useRef } from 'react';
+
 export default function Hero() {
+
+    const UnderlinedHeader = () => {
+        const h5Ref = useRef(null);
+    
+        useEffect(() => {
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else{
+                        entry.target.classList.remove('show')
+                    }
+                },
+                { threshold: 1 } // Ajusta el umbral según sea necesario
+            );
+    
+            if (h5Ref.current) {
+                observer.observe(h5Ref.current);
+            }
+    
+            return () => {
+                if (h5Ref.current) {
+                    observer.unobserve(h5Ref.current);
+                }
+            };
+        }, []);
+    
+        return <h5 ref={h5Ref} className="h5-underline">SOMOS ESPECIALISTAS EN ENDOSCOPIA VETERINARIA E INDUSTRIAL</h5>;
+    };
     return (
         <section>
             <section className='main-section'>
                 <h1>ALPHASCOPE</h1>
-                <h5>SOMOS ESPECIALISTAS EN ENDOSCOPIA VETERINARIA E INDUSTRIAL</h5>
+                <UnderlinedHeader />
                 <p>Comercializamos equipos médicos para uso veterinario. Entendemos la importancia para los profesionales veterinarios de contar
                     con equipos confiables para obtener los mejores resultados que les permitan realizar su trabajo enfocándose en sus pacientes, 
                     delegando en nosotros la atención de sus equipos e instrumental de trabajo. 

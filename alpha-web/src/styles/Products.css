@@ -10,7 +10,7 @@
     top: 80px;
     z-index:2;
     padding: 5px;
-    background: var(--third-color-50);
+    background: var(--second-color-50);
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,11 @@
 }
 
 .nav-items:hover{
-    background: var(--third-color);
+    background: var(--second-color);
 }
 
 .nav-items.active {
-    background: var(--third-color); 
+    background: var(--second-color); 
     color: black; 
 }
 

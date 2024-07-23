@@ -19,6 +19,12 @@
 .text-article{
     padding: 0px;
 }
+
+.article-section .article-info .text-article:first-of-type{
+  background-color: var(--second-color);
+  padding-left: 20px;
+  clip-path: polygon(3% 0%, 95% 0%, 91% 100%, 0% 100%);
+}
 .article-image{
   width: 100%;
 

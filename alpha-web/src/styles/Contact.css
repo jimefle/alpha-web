@@ -41,8 +41,8 @@
   .user-info button {
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: var(--third-color);
-    color: #fff;
+    background-color: var(--second-color);
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
