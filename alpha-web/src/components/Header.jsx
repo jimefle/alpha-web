@@ -1,19 +1,23 @@
 import '/src/styles/Header.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
+  const location = useLocation();
+  const getLinkClass = (path) =>{
+    return location.pathname === path ? 'header-links active' : 'header-links';
+  }
     return(
       <div>
         
         <header>
           <img src="./src/image/logo-alpha.jpeg" className='logo-image' alt="Logo AlphaScope" />
           <div className='nav-links'>
-            <Link to="/" className="header-links">Inicio</Link>
-            <Link to="/products" className="header-links">Productos</Link>
-            <Link to="/services" className="header-links">Servicios</Link>
-            <Link to="/blog" className="header-links">Blog</Link>
-            <Link to="/about-us" className="header-links">Empresa</Link>
-            <Link to="/contact" className="header-links">Contacto</Link>
+            <Link to="/" className={getLinkClass("/")}>Inicio</Link>
+            <Link to="/products" className={getLinkClass("/products")}>Productos</Link>
+            <Link to="/services" className={getLinkClass("/services")}>Servicios</Link>
+            <Link to="/blog" className={getLinkClass("/blog")}>Blog</Link>
+            <Link to="/about-us" className={getLinkClass("/about-us")}>Empresa</Link>
+            <Link to="/contact" className={getLinkClass("/contact")}>Contacto</Link>
           </div>
       </header>
 

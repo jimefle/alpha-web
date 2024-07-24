@@ -31,22 +31,21 @@
 .imagen-article{
     margin-top: 70px;
     margin-right: 200px;
-    height: 500px;
-    
+    height: 400px;
   }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .article-info {
       padding: 20px;
-      padding-left: 100px;
+      padding-left: 80px;
       padding-right: 20px;
     }
   
     .imagen-article {
       margin-right: 0;
       padding-right: 50px;
-      height: auto;
-      width: 100%;
+      height: 350px;
+      width: auto;
       max-width: 1000px;
     }
 }
@@ -74,13 +73,13 @@
 /* Media query for medium screens */
 @media (max-width: 1024px) {
     .article-info {
-      padding: 60px;
-      padding-left: 150px;
-      padding-right: 150px;
+      padding: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   
     .imagen-article {
-      margin-top: 50px;
+      margin-top: 20px;
       margin-right: 0;
       padding-right: 0;
       height: auto;
@@ -97,9 +96,9 @@
     }
   
     .article-info {
-      padding: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
     .imagen-article {
@@ -114,9 +113,9 @@
   /* Media query for extra small screens */
   @media (max-width: 480px) {
     .article-info {
-      padding: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   
     .imagen-article {
