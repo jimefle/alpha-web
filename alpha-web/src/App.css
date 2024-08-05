@@ -60,6 +60,9 @@ p {
   font-size: var(--font-size-p);
   font-weight: 400;
 }
+li{
+  font-size: var(--font-size-p);
+}
 
 #root {
   margin: 0;

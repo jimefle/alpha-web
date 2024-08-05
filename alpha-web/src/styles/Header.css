@@ -8,12 +8,18 @@
     background: linear-gradient(to right, var(--alpha-color), var(--alpha-color), var(--alpha-color-doble));
     width: 100%;
     flex-grow: 1;
-    z-index: 2;
+    z-index: 10;
   }
   
   header .logo-image{
     padding: 10px;
-    height: 4em;
+    height: 4.5em;
+    transition: height 1s ease, padding 0.3s ease;
+  }
+
+  .logo-image.small {
+    height: 3.5em;
+    padding: 10px;
   }
 
   nav{
@@ -34,15 +40,32 @@
   }
 
   .header-links{
-    padding: 20px;
+    margin: 10px;
+    padding-bottom: 0px;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    position: relative;
   }
-  
+
+  .header-links::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--second-color);
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
   .header-links:hover{
     color: var(--second-color);
-    text-decoration: underline 2px var(--second-color);
+  }
+
+  .header-links:hover::after {
+    width: 100%;
+    left: 0;
   }
 
   .header-links.active {
