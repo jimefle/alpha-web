@@ -3,13 +3,12 @@
     position: relative;
     width: 100%;
     background: linear-gradient(to right, var(--alpha-color), var(--alpha-color) ,var(--alpha-color-doble));
-    height: 200px;
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: end;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
+    justify-content: space-between;
+    padding: 20px 40px;
   }
 
 .logo-image{
@@ -17,15 +16,17 @@
     height: 4em;
   }
 
+.icons-section{
+  display: flex;
+  gap: 30px;
+}
+
 .icons{
-    padding-left: 40px;
-    padding-right: 20px;
     font-size: 30px;
     color: white;
 }
 
 .alpha-info {
-  width: 100%;
   text-align: start;
   color: white;
 }
@@ -55,36 +56,14 @@ a{
   color: white;
   text-decoration: none;
 }
-/* Media query for medium screens */
-@media (max-width: 1024px) {
-  .footer-footer{
-    justify-content: center;
-    background: var(--alpha-color);
-  }
-}
 
 /* Media query for small screens */
 @media (max-width: 768px) {
-  .footer-footer{
+  .footer{
     justify-content: center;
     background: var(--alpha-color);
-    gap: 0px;
   }
   .logo-image{
     height: 3.5em;
-  }
-}
-
-/* Media query for extra small screens */
-@media (max-width: 550px) {
-  .footer-footer{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    background: var(--alpha-color);
-    gap: 10px;
-  }
-  .logo-image{
-    height: 4em;
   }
 }

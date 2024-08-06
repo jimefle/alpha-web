@@ -84,16 +84,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: 2;
     transform: none;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    max-height: 100%;
   }
   
   .blog-full-content {
     margin-top: 20px;
+    margin-bottom: 10px;
     flex: 1;
     overflow-y: auto;
     text-align: start;
@@ -124,7 +125,6 @@
     padding: 20px;
     border-radius: 8px;
     width: 90%;
-    max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto; 
     position: relative;

@@ -58,11 +58,11 @@ function ContactForm() {
 
 const Contact = () => {
     return(
-        <div className="contact-page">
-            <section className="user-info">
-                <ContactForm ></ContactForm>
-            </section>
-        </div>
+        <section className="user-info">
+            <h2>CONTACTO</h2>
+            <ContactForm ></ContactForm>
+        </section>
+
     )
 }
 

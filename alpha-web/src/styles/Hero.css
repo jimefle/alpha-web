@@ -20,8 +20,7 @@
 }
 
 p{
-    padding-left: 300px;
-    padding-right: 300px;
+  padding: 0 20vw;
 }
 
 .card-section{
@@ -35,7 +34,8 @@ p{
 
 .card {
   position: relative;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 270px;
   text-align: center;
   transition: transform 1s;
@@ -71,8 +71,7 @@ p{
     padding: 15px 30px;
   }
   p{
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 15vw;
   }
   .card-section{
     gap: 20px;
@@ -84,9 +83,11 @@ p{
 
 /* Media query for medium screens */
 @media (max-width: 1024px) {
-  p{
-    padding-left: 100px;
-    padding-right: 100px;
+  .main-section {
+    padding: 10px 20px;
+  }
+  p {
+      padding: 0 10vw;
   }
   .card-section{
     gap: 30px;
@@ -98,35 +99,41 @@ p{
 
 /* Media query for small screens */
 @media (max-width: 768px) {
-  .main-section{
-    padding: 10px 20px;
+  .main-section {
+    padding: 10px 15px;
   }
-  p{
-    padding-left: 50px;
-    padding-right: 50px;
+  p {
+      padding: 0 5vw;
   }
-  .card-section{
-    gap: 10px;
+  .card {
+      width: 90%; /* Ajustar el ancho de las tarjetas */
+      max-width: 350px;
   }
-  article{
-    margin: 10px;
+  .card-section {
+      gap: 10px;
+  }
+  article {
+      margin: 10px;
   }
 }
 
 
 /* Media query for extra small screens */
 @media (max-width: 480px) {
-  .main-section{
+  .main-section {
     padding: 5px 10px;
   }
-  p{
-    padding-left: 10px;
-    padding-right: 10px;
+  p {
+      padding: 0 3vw;
   }
-  .card-section{
-    gap: 0px;
+  .card {
+      width: 100%; /* Tarjetas ocupan todo el ancho */
+      max-width: 300px;
   }
-  article{
-    margin: 10px;
+  .card-section {
+      gap: 5px;
+  }
+  article {
+      margin: 10px;
   }
 }
