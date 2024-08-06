@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 :root{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', system-ui, sans-serif;
   line-height: 1.5;
 
   font-synthesis: none;
@@ -58,7 +59,7 @@ h6 {
 
 p {
   font-size: var(--font-size-p);
-  font-weight: 400;
+  font-weight: 350;
 }
 li{
   font-size: var(--font-size-p);
