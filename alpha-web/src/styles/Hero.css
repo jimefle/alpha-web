@@ -74,39 +74,39 @@ article{
 .card-back {
   transform: rotateY(180deg);
 }
+
 /* --------- ver más button -------- */
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .cta {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  border: 2px solid var(--second-color); 
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.499);
-  border-radius: 25px;
-  background-color: transparent;
-  color: #000;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 1s, color 0.3s; 
+display: inline-flex;
+align-items: center;
+padding: 10px 20px;
+border: 2px solid var(--second-color); 
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.499);
+border-radius: 25px;
+background-color: transparent;
+color: #000;
+text-decoration: none;
+font-size: 16px;
+transition: background-color 1s, color 0.3s; 
 }
 
 .cta:hover {
-  background-color: var(--second-color); 
+background-color: var(--second-color); 
 
 }
 
 .cta svg {
-  margin-left: 10px;
-  transition: transform 0.3s;
+margin-left: 10px;
+transition: transform 0.3s;
 }
 
 .cta:hover svg {
-  transform: translateX(5px); 
+transform: translateX(5px); 
 }
-
 
   /* Media query for medium medium screens */
 @media (max-width: 1475px) {

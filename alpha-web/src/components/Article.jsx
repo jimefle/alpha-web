@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
-import '../styles/Article.css'
-const  Article = ({ title, text, image }) => {
+import '../styles/Article.css';
+
+
+const  Article = ({ title, text, image , imagePosition = 'left' }) => {
     const texts = text.split('/n').filter(p => p.trim().length > 0);
 
     return(
-        <div className="article-section">
+        <div className={`article-section ${imagePosition}`}>
             <section className="article-info">
                 <h1>{title}</h1>
                 {texts.map((para, index) => (
@@ -12,8 +14,9 @@ const  Article = ({ title, text, image }) => {
                 ))}
             </section>
             <section className="article-image">
-                <img src={image} alt="Image" className="imagen-article"/>
+                <img src={image} alt="" className="imagen-article"/>
             </section>
+            
         </div>
     )
 }
