@@ -4,8 +4,8 @@
   grid-template-rows: auto auto; /* Dos filas */
   grid-template-columns: auto auto; /* Dos columnas*/
   align-items: center;
-  gap: 50px;
-  padding: 0px 20px 100px 20px;
+  gap: 30px;
+  padding: 20px 20px 30px 20px;
   opacity: 0;
   transform: translateX(-100vw); /* Inicia fuera de la pantalla a la izquierda */
   transition: opacity 1.5s ease-in-out, transform 2s ease-in-out;
