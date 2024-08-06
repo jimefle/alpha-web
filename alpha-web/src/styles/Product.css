@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 5px rgba(182, 181, 181, 0.47);
+    box-shadow: 1px 1px 3px rgba(182, 181, 181, 0.47);
     height: 350px; 
     width: 300px; 
     border-radius: 20px;
