@@ -9,13 +9,17 @@ const  Article = ({ title, text, image , imagePosition = 'left' , path = null, b
     const articleRef = useRef(null)
 
     useEffect(()=>{
-        const handleScroll = () => {
-            if (isVisible) return // para que solo lo haga la primera vez
 
+        const handleScroll = () => {
+            if (isVisible) return // Para que solo lo haga la primera vez
+            
             const element = articleRef.current
             if(element){
                 const rect = element.getBoundingClientRect()
-                const isElementVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                const windowHeight = window.innerHeight; // Obtiene la altura de la ventana.
+
+                const isElementVisible = (rect.top < windowHeight * 0.6);
+                    
                 if (isElementVisible){
                     setIsVisible(true)
                 }
@@ -27,7 +31,7 @@ const  Article = ({ title, text, image , imagePosition = 'left' , path = null, b
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    },[isVisible])
+    }, [])
 
     return(
         <div ref={articleRef} className={`article-section ${imagePosition} ${isVisible ? 'article-enter-active' : ''}`}>

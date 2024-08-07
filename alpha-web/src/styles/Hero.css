@@ -6,7 +6,7 @@
 }
 
 .main-section{
-    margin: 80px 0px 0px 0px;
+    margin: 80px 150px 0px 150px;
     background: white;
     color: black;
     display: flex;
@@ -68,6 +68,7 @@ p{
   /* Media query for medium medium screens */
 @media (max-width: 1475px) {
   .main-section{
+    margin: 30px 50px 0px 50px;
     padding: 15px 30px;
   }
   p{
@@ -84,6 +85,7 @@ p{
 /* Media query for medium screens */
 @media (max-width: 1024px) {
   .main-section {
+    margin: 20px 20px 0px 20px;
     padding: 10px 20px;
   }
   p {
@@ -121,6 +123,7 @@ p{
 /* Media query for extra small screens */
 @media (max-width: 480px) {
   .main-section {
+    margin: 5px 5px 0px 5px;
     padding: 5px 10px;
   }
   p {

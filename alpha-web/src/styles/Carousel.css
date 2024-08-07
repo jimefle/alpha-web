@@ -17,20 +17,24 @@
 
 .contenedor {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra del texto */
   margin: 0;
   max-width: 80%;
 }
 
 .carousel .carousel-text {
   position: absolute;
+  margin: 20px;
   bottom: 20px; /* Ajusta la posición vertical del texto */
   left: 20px; /* Ajusta la posición horizontal del texto */
   color: white; /* Color del texto */
-  padding: 10px; /* Espaciado interno */
-  z-index: 2; /* Asegúrate de que el texto esté por encima de la imagen */
+  z-index: 2; /* Texto por encima de la imagen */
+  width: 100%;
+  text-align: start;
+  background: rgba(128, 128, 128, 0.733);
+  padding-left: 20px;
+  border-radius: 50px 0px 0px 50px;
 }
 
 
@@ -53,20 +57,20 @@
 }
 
 /* Media query for  medium screens */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .carousel-text {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 /* Media query for small screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .carousel-text {
     font-size: 24px;
   }
 }
 
 /* Media query for extra small screens */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .carousel-text {
     font-size: 18px;
   }

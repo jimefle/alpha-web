@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: var(--header-height);
     background: linear-gradient(to right, var(--alpha-color), var(--alpha-color), var(--alpha-color-doble));
     width: 100%;
     flex-grow: 1;
@@ -116,6 +116,7 @@
   header{
     flex-direction: column;
     background: var(--alpha-color);
+    height: var(--header-height-min);
   }
   .logo-image {
     height: 3em;

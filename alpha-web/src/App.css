@@ -17,6 +17,10 @@
   --font-size-h5: 1.25em;
   --font-size-p: 1.1em;
 
+  /* -------- header------*/
+  --header-height: 72px;
+  --header-height-min: 124px;
+
   /* -------------- colores -------------- */
   --alpha-color: #3F8DBB ; /* rgb(55,144,187) */
   --alpha-color-doble: rgb(34, 91, 120);
@@ -87,10 +91,23 @@ body{
   flex-grow: 1;
   min-height: 100vh;
 }
-main{
-  flex: 1;
+header {
+  flex: 0 0 auto;
 }
 
+main {
+  flex: 1 0 auto; 
+  padding-top: var(--header-height); 
+
+}
+@media (max-width: 634px) {
+  main{
+    padding-top: var(--header-height-min);
+  }
+}
+footer {
+  flex: 0 0 auto; 
+}
 .float{
 	position:fixed;
 	width:60px;
