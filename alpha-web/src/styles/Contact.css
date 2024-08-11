@@ -1,15 +1,33 @@
 @import url('../App.css');
 
+.contact-section{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  gap: 100px;
+  background: linear-gradient(to right,var(--alpha-color), var(--alpha-color), var(--alpha-color-doble));
+}
+
+.contact-hello{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.contact-hello h1 , h5{
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
   .user-info {
-    margin: 100px;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: white;
   }
   
   .user-info form {
@@ -42,22 +60,55 @@
     margin-top: 20px;
     width: fit-content;
     padding: 8px 40px;
-    background-color: var(--second-color);
+    border: 3px solid var(--second-color);
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
     color: black;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .user-info button:hover{
+    background-color: var(--second-color);
   }
   .user-info h2{
     color: var(--alpha-color);
     margin: 5px 0px;
   }
 
+  @media (max-width: 1200px) {
+    .contact-section{
+      padding: 70px;
+      gap: 50px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .user-info {
+      margin-top: 30px;
+      max-width:80%; 
+    }
+    .contact-section{
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      gap: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact-section{
+      background: var(--alpha-color);
+    }
+  }
   @media (max-width: 634px) {
     .user-info {
-      margin-top: 150px;
+      margin-top: 20px;
       max-width:80%; 
+
+    }
+    .contact-section{
+      padding: 30px;
     }
   }
   

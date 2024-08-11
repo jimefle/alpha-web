@@ -58,9 +58,15 @@ function ContactForm() {
 
 const Contact = () => {
     return(
-        <section className="user-info">
-            <h2>CONTACTO</h2>
-            <ContactForm ></ContactForm>
+        <section className="contact-section">
+            <div className="contact-hello">
+                <h1>Contactanos!</h1>
+                <h5> Si tenes alguna pregunta, comentario o simplemente deseas saber más información, estamos aquí para usted.</h5>
+            </div>
+            <div className="user-info">
+                <h2>Envianos un mensaje</h2>
+                <ContactForm ></ContactForm>
+            </div>
         </section>
 
     )
