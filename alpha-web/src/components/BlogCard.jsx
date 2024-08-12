@@ -24,7 +24,7 @@ const BlogCard = ({ image, title, description, content, onExpand, isExpanded }) 
             />
             <div className="outer-close" onClick={handleClose}>
               <div className="inner-close">
-                <label>Cerrar</label>
+                <label className='label-blog'>Cerrar</label>
               </div>
             </div>
           </>

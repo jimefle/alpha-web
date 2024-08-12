@@ -24,6 +24,7 @@
   /* -------------- colores -------------- */
   --alpha-color: #3F8DBB ; /* rgb(55,144,187) */
   --alpha-color-doble: rgb(34, 91, 120);
+  --alpha-color-50: rgb(34, 91, 120,0.5);
   --second-color: rgb(225,216,159);
   --second-color-50: rgb(225,216,159,0.5);
   --third-color:rgb(205,199,229);

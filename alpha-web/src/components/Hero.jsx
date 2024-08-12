@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section>
             <section className='main-section'>
-            <Article
+                <Article
                     title=""
                     text={
                         "Somos especialistas en endoscopía veterinaria e industrial/nEntendemos la importancia para los profesionales veterinarios de contar con equipos confiables para obtener los mejores resultados que les permitan realizar su trabajo enfocándose en sus pacientes, delegando en nosotros la atención de sus equipos e instrumental de trabajo./nEn el rubro industrial, proveemos equipos como boroscopios y cámaras de inspección de tuberías, satisfaciendo una amplia gama de necesidades en el ámbito de las inspecciones técnicas no destructivas."
@@ -35,16 +35,16 @@ export default function Hero() {
                     btnText={"VER PRODUCTOS"}
                 />
             </section>
-            <section className="card-section">
-                <article className='card'>
-                        <h3>Visión</h3>
-                        <h6>Convertirnos en referentes en el mercado de los equipos médicos veterinarios y en el área de la endoscopia industrial, ofreciendo productos y servicios de calidad y al mejor precio.</h6>
-                </article>
-                <article className='card'>
-                        <h3>Misión</h3>
-                        <h6>Proveer a los profesionales de los equipos necesarios que les permitan realizar su trabajo de forma eficiente, con equipamiento de vanguardia y asequibles, cuidando todo el proceso de adquisición de sus equipos sabiendo que en todo momento cuentan con el apoyo técnico necesario.</h6>
-                </article>
-            </section>
+            <div className="card-section">
+                    <article className='card'>
+                            <h3>Visión</h3>
+                            <h6>Convertirnos en referentes en el mercado de los equipos médicos veterinarios y en el área de la endoscopia industrial, ofreciendo productos y servicios de calidad y al mejor precio.</h6>
+                    </article>
+                    <article className='card'>
+                            <h3>Misión</h3>
+                            <h6>Proveer a los profesionales de los equipos necesarios que les permitan realizar su trabajo de forma eficiente, con equipamiento de vanguardia y asequibles, cuidando todo el proceso de adquisición de sus equipos sabiendo que en todo momento cuentan con el apoyo técnico necesario.</h6>
+                    </article>
+                </div>
         </section>
     )
 }
