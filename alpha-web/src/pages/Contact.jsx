@@ -62,6 +62,7 @@ const Contact = () => {
             <div className="contact-hello">
                 <h1>Contactanos!</h1>
                 <h5> Si tenes alguna pregunta, comentario o simplemente deseas saber más información, estamos aquí para usted.</h5>
+                <img src="./src/image/contact-image.png" alt="world image" className='image'/>
             </div>
             <div className="user-info">
                 <h2>Envianos un mensaje</h2>

@@ -16,10 +16,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-wrap: wrap;
 }
 .contact-hello h1 , h5{
   margin: 0px;
   margin-bottom: 10px;
+}
+
+.contact-hello .image{
+  padding:50px 0px;
+  width: 100%;
 }
 
   .user-info {
@@ -80,7 +86,7 @@
 
   @media (max-width: 1200px) {
     .contact-section{
-      padding: 70px;
+      padding: 80px 50px;
       gap: 50px;
     }
   }
@@ -94,6 +100,10 @@
       align-items: center;
       padding: 50px;
       gap: 0px;
+    }
+    .contact-hello .image{
+      padding: 10px 0px;
+      width: 100%;
     }
   }
   @media (max-width: 768px) {

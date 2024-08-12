@@ -35,23 +35,14 @@ export default function Hero() {
                     btnText={"VER PRODUCTOS"}
                 />
             </section>
-
             <section className="card-section">
                 <article className='card'>
-                    <div className="card-front">
                         <h3>Visión</h3>
-                    </div>
-                    <div className="card-back">
                         <h6>Convertirnos en referentes en el mercado de los equipos médicos veterinarios y en el área de la endoscopia industrial, ofreciendo productos y servicios de calidad y al mejor precio.</h6>
-                    </div>
                 </article>
                 <article className='card'>
-                    <div className="card-front">
                         <h3>Misión</h3>
-                    </div>
-                    <div className="card-back">
                         <h6>Proveer a los profesionales de los equipos necesarios que les permitan realizar su trabajo de forma eficiente, con equipamiento de vanguardia y asequibles, cuidando todo el proceso de adquisición de sus equipos sabiendo que en todo momento cuentan con el apoyo técnico necesario.</h6>
-                    </div>
                 </article>
             </section>
         </section>

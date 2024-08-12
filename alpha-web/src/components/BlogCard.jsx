@@ -22,9 +22,11 @@ const BlogCard = ({ image, title, description, content, onExpand, isExpanded }) 
               className="blog-full-content"
               dangerouslySetInnerHTML={{ __html: content }}
             />
-            <button className="close-button" onClick={handleClose}>
-              Cerrar
-            </button>
+            <div className="outer-close" onClick={handleClose}>
+              <div className="inner-close">
+                <label>Cerrar</label>
+              </div>
+            </div>
           </>
         ) : (
           <>

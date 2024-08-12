@@ -26,10 +26,12 @@ p{
 .card-section{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    background-image: url('../image/alpha-image.jpg');
+    background-size: cover;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -38,31 +40,18 @@ p{
   max-width: 400px;
   height: 270px;
   text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
+  background-color: white;
   box-shadow: 2px 2px 5px gray;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.card:hover {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  backface-visibility: hidden;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.card-back {
-  transform: rotateY(180deg);
+.card h3, h6{
+  margin: 0px;
+  padding: 5px 20px;
 }
 
   /* Media query for medium medium screens */

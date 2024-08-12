@@ -80,6 +80,7 @@
   align-items: center;
   padding: 10px 20px;
   border: 2px solid var(--second-color);
+  border-radius: 15px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.499);
   background-color: transparent;
   color: #000;
