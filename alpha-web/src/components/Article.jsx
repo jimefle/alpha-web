@@ -1,37 +1,12 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useRef, useState } from 'react';
+import {  useRef } from 'react';
 import '../styles/Article.css';
 import {Link} from 'react-router-dom'
 
 const  Article = ({ title, text, image , imagePosition = 'left' , path = null, btnText}) => {
     const texts = text.split('/n').filter(p => p.trim().length > 0);
-    const [isVisible, setIsVisible] = useState(false)
     const articleRef = useRef(null)
-
-    useEffect(()=>{
-
-        const handleScroll = () => {
-            if (isVisible) return // Para que solo lo haga la primera vez
-            
-            const element = articleRef.current
-            if(element){
-                const rect = element.getBoundingClientRect()
-                const windowHeight = window.innerHeight; // Obtiene la altura de la ventana.
-
-                const isElementVisible = (rect.top < windowHeight * 0.6);
-                    
-                if (isElementVisible){
-                    setIsVisible(true)
-                }
-            }
-        }
-        window.addEventListener('scroll', handleScroll);
-        handleScroll()
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [])
+    const isVisible = true
 
     return(
         <div ref={articleRef} className={`article-section ${imagePosition} ${isVisible ? 'article-enter-active' : ''}`}>

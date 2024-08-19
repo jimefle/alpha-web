@@ -20,7 +20,7 @@ export default function Footer(){
                     </div>
                     <div className='info'>
                         <FontAwesomeIcon icon={faWhatsapp} className='contact-line'/>
-                        <a href="" target="_blank">+54 343 4 341791</a>
+                        <a href="https://wa.me/543434341791" target="_blank">+54 343 4 341791</a>
                     </div>
                     <div className='info'>
                         <FontAwesomeIcon icon={faEnvelope} className='contact-line' />
