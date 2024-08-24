@@ -53,6 +53,35 @@ p{
   padding: 5px 10px;
 }
 
+/*------------------------- brands carousel ----------------------------*/
+.brands-carousel {
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-image {
+  width: 100%; 
+  height: auto; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
   /* Media query for medium medium screens */
 @media (max-width: 1475px) {
   .main-section{
@@ -72,6 +101,9 @@ p{
   }
   article{
     margin: 10px;
+  }
+  .carousel-track {
+    animation: scroll 20s linear infinite;
   }
 }
 
@@ -106,6 +138,9 @@ p{
     }
   article {
       margin: 10px;
+  }
+  .carousel-track {
+    animation: scroll 10s linear infinite;
   }
 }
 

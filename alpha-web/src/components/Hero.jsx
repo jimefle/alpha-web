@@ -1,5 +1,5 @@
-import '/src/styles/Hero.css'
-import Article from '../components/Article'
+import '/src/styles/Hero.css';
+import Article from '../components/Article';
 
 export default function Hero() {
 
@@ -34,6 +34,13 @@ export default function Hero() {
                     path={'products'}
                     btnText={"VER PRODUCTOS"}
                 />
+            </section>
+            <section className='brands-carousel'>
+                <div className="carousel-track">
+                    <img src="./src/image/brands.jpg" alt="brands" className='carousel-image'/>
+                    <img src="./src/image/brands.jpg" alt="brands" className='carousel-image'/>
+                    <img src="./src/image/brands.jpg" alt="brands" className='carousel-image'/>
+                </div>
             </section>
             
         </section>
