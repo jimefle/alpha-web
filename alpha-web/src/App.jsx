@@ -3,8 +3,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Blog from './pages/Blog';
-import Services from './pages/Services';
-import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
@@ -20,8 +18,6 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="products" element={<Products />} />
                     <Route path="blog" element={<Blog />} />
-                    <Route path="services" element={<Services />} />
-                    <Route path="about-us" element={<AboutUs />} />
                     <Route path="contact" element={<Contact />} />
                 </Routes> 
             </main>
