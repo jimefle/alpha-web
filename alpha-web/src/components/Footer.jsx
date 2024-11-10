@@ -6,37 +6,36 @@ import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 export default function Footer(){
     return(
             <section className="footer">
-                <img src="./src/image/logo-alpha.jpeg" className='logo-image' alt="Logo AlphaScope" />
+                <section className="social-media">
+                    <h5 className="text-social-media">
+                        Seguinos en nuestras redes sociales
+                    </h5>
+                    <div className='icons-section'>
+                        <a href="https://instagram.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
+                            <FontAwesomeIcon icon={faInstagram} /> 
+                        </a>
+                        <a href="https://facebook.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
+                            <FontAwesomeIcon icon={faFacebook} /> 
+                        </a>
+                    </div>
+                </section>
                 <section className="alpha-info">   
                     <div className='info'>
-                        <h5>
+                        <a>
                             <FontAwesomeIcon icon={faLocationDot} className='contact-line' />
                             Antonio Crespo 1609, Paraná, Entre Rios, <strong>Argentina</strong>
-                        </h5>
-                    </div>
-                    <div className='info'>
-                        <FontAwesomeIcon icon={faWhatsapp} className='contact-line' />
-                        <a href="https://wa.me/543435093106"  target="_blank">+54 343 5 093106</a>
+                        </a>
                     </div>
                     <div className='info'>
                         <FontAwesomeIcon icon={faWhatsapp} className='contact-line'/>
-                        <a href="https://wa.me/543435726481" target="_blank">+54 343 5 726481</a>
+                        <a href="https://wa.me/543435726481" target="_blank">+54 9 343 5 726481</a>
                     </div>
                     <div className='info'>
                         <FontAwesomeIcon icon={faEnvelope} className='contact-line' />
                         <a href="mailto:contacto@alphascope.com.ar" >contacto@alphascope.com.ar</a>
                     </div>
                 </section>
-                <div className='icons-section'>
-                    <a href="https://instagram.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
-                        <FontAwesomeIcon icon={faInstagram} /> 
-                    </a>
-                    <a href="https://facebook.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
-                        <FontAwesomeIcon icon={faFacebook} /> 
-                    </a>
-                    <a href="https://www.linkedin.com/company/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
-                    </a>
-                </div>
+                
                 
             </section>
 

@@ -36,7 +36,12 @@
   
   .nav-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    font-size: 25px;
+    padding-right: 30px;
+    font-weight: 540;
+    gap: 20px;
   }
 
   .header-links{
@@ -98,46 +103,29 @@
 
 /* Media query for small screens */
 @media (max-width: 768px) {
-  .header-links {
-    padding: 8px;
-  }
-
-  button {
-    padding: 6px;
-  }
-
-  .contact-info{
-    gap: 2px;
-  }
-}
-
-/* Media query for extra small screens */
-@media (max-width: 768px) {
   header{
     flex-direction: column;
     background: var(--alpha-color);
     height: var(--header-height-min);
     justify-content: end;
+    
   }
-  .logo-image {
-    height: 3em;
+  header .logo-image{
+    height: 4em;
   }
-
-  .header-links {
-    font-size: 0.9em;
-    padding: 5px;
+  .nav-links{
+    font-size: 15px;
+    padding-right: 0px;
   }
 
   button {
     padding: 5px;
     font-size: 0.9em;
   }
-
   .contact-info{
     padding-top: 100px;
     flex-direction: column;
-    gap: 0;
+    gap: 0px;
     align-items: start;
   }
-
 }

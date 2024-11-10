@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 1px 1px 3px rgba(182, 181, 181, 0.47);
+    box-shadow: 2px 2px 6px rgba(41, 41, 41, 0.47);
     height: 350px; 
     width: 300px; 
     border-radius: 20px;
@@ -35,4 +35,26 @@
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .product-card{
+        height: 175px; 
+        width: 150px; 
+        border-radius: 20px;
+        padding: 5px;
+        margin: 5px; 
+    }
+    .product-image {
+        height: 100%;
+        width: 100%;
+        object-fit: conver;
+        border-radius: 5px;
+        padding: 0px;
+    }
+    
+    .product-name {
+        font-size: 13px;
+        padding: 2px;
+    }
 }

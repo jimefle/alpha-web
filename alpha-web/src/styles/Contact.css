@@ -7,7 +7,7 @@
   align-items: start;
   text-align: start;
   gap: 100px;
-  background: linear-gradient(to right,var(--alpha-color), var(--alpha-color), var(--alpha-color-doble));
+  background-color: rgba(225, 216, 159, 0.205);
 }
 
 .contact-hello{
@@ -18,9 +18,11 @@
   align-items: start;
   flex-wrap: wrap;
 }
-.contact-hello h1 , h5{
+.contact-hello h1, h5{
   margin: 0px;
   margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--alpha-color-doble);
 }
 
 .contact-hello .image{
@@ -31,7 +33,7 @@
   .user-info {
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
     background: white;
   }
@@ -84,41 +86,25 @@
     margin: 5px 0px;
   }
 
-  @media (max-width: 1200px) {
-    .contact-section{
-      padding: 80px 50px;
-      gap: 50px;
-    }
-  }
-  @media (max-width: 1000px) {
-    .user-info {
-      margin-top: 30px;
-      max-width:80%; 
-    }
+  @media (max-width: 800px) {
     .contact-section{
       flex-direction: column;
       align-items: center;
-      padding: 50px;
+      padding: 20px;
       gap: 0px;
+    }
+    .user-info {
+      margin-top: 20px;
+      max-width:100%; 
+      padding: 13px;
+    }
+    .user-info h2{
+      font-size: 25px;
     }
     .contact-hello .image{
       padding: 10px 0px;
       width: 100%;
     }
   }
-  @media (max-width: 768px) {
-    .contact-section{
-      background: var(--alpha-color);
-    }
-  }
-  @media (max-width: 634px) {
-    .user-info {
-      margin-top: 20px;
-      max-width:80%; 
 
-    }
-    .contact-section{
-      padding: 30px;
-    }
-  }
   

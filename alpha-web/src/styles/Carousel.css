@@ -57,6 +57,10 @@
   right: 0;
 }
 
+.carousel.carousel-slider .control-arrow::before{
+
+}
+
 /* Media query for  medium screens */
 @media (max-width: 1200px) {
   .carousel-text {
