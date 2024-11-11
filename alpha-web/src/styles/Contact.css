@@ -1,13 +1,13 @@
 @import url('../App.css');
 
 .contact-section{
-  padding: 100px;
+  padding: 70px;
   display: flex;
   justify-content: center;
   align-items: start;
   text-align: start;
   gap: 100px;
-  background-color: rgba(225, 216, 159, 0.205);
+
 }
 
 .contact-hello{
@@ -86,7 +86,28 @@
     margin: 5px 0px;
   }
 
-  @media (max-width: 800px) {
+  /* Media query for medium screens */
+  @media (max-width: 1280px) {
+    .contact-section{
+      padding: 45px;
+      gap: 0px;
+    }
+    .user-info {
+      margin-top: 20px;
+      max-width:100%; 
+      padding: 13px;
+    }
+    .user-info h2{
+      font-size: 25px;
+    }
+    .contact-hello .image{
+      padding: 10px 0px;
+      width: 100%;
+    }
+  }
+
+/* Media query for smaller screens */
+  @media (max-width: 900px) {
     .contact-section{
       flex-direction: column;
       align-items: center;

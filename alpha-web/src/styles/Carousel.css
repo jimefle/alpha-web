@@ -57,27 +57,32 @@
   right: 0;
 }
 
-.carousel.carousel-slider .control-arrow::before{
-
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo de las flechas */
+  color: #ffffff !important; /* Color del ícono de la flecha */
 }
+
+.carousel .control-next.control-arrow {
+  right: 15px !important; /* Posición de la flecha derecha */
+}
+
+.carousel .control-prev.control-arrow {
+  left: 15px !important; /* Posición de la flecha izquierda */
+}
+
 
 /* Media query for  medium screens */
 @media (max-width: 1200px) {
-  .carousel-text {
+  .carousel .carousel-text {
     font-size: 30px;
   }
 }
 /* Media query for small screens */
-@media (max-width: 900px) {
-  .carousel-text {
-    font-size: 24px;
-  }
-}
-
-/* Media query for extra small screens */
-@media (max-width: 600px) {
-  .carousel-text {
-    font-size: 18px;
+@media (max-width: 800px) {
+  .carousel .carousel-text {
+    font-size: 15px;
+    margin: 5px;
+    padding-right: 10px;
   }
 
 }

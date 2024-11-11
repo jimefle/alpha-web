@@ -102,7 +102,7 @@
   }
 
 /* Media query for small screens */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header{
     flex-direction: column;
     background: var(--alpha-color);
@@ -117,6 +117,9 @@
     font-size: 15px;
     padding-right: 0px;
   }
+  .header-links{
+    margin: 8px;
+  }
 
   button {
     padding: 5px;
@@ -127,5 +130,16 @@
     flex-direction: column;
     gap: 0px;
     align-items: start;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 344px) {
+  .nav-links{
+    font-size: 13px;
+    padding-right: 0px;
+  }
+  .header-links{
+    margin: 5px;
   }
 }
