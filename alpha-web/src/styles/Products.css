@@ -18,16 +18,11 @@
     margin: 0 35%;
 }
 
-.nav-items{
-    border-radius: 25px;
-    padding: 3px 16px;
-    transition: all 0.5s ease-in-out;
-}
-
 .products-display{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    align-items: stretch;
 }
 
 .products-page h2{
@@ -36,6 +31,7 @@
     margin-top: 30px;
 }
 
+/*--------------- nav items -----------------*/
 .nav-items:hover{
     background: var(--second-color);
 }
@@ -44,7 +40,12 @@
     background: var(--second-color); 
     color: black; 
 }
-
+.nav-items{
+  border-radius: 25px;
+  padding: 3px 16px;
+  transition: all 0.5s ease-in-out;
+}
+/*--------------- contacto -----------------*/
 .contact-prod-section{
     height: 300px;
     display: flex;
@@ -53,15 +54,32 @@
     flex-direction: column;
 }
 
+.cta {
+  width: fit-content;
+  padding: 8px 40px;
+  border: 3px solid var(--second-color);
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.cta:hover{
+  background-color: var(--second-color);
+}
+
 @media (max-width: 1340px) {
     .nav-products {
-      margin: 0 30%; 
+      margin: 0 20%; 
     }
   }
 
 @media (max-width: 768px) {
   .nav-products {
-    margin: 0 2%;
+    margin: 0 20%;
     top: 130px;
   }
   .nav-items {
@@ -72,19 +90,27 @@
     margin-top: 30px;
   }
   .products-display {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    gap: 10px;
+  }
+  .product-card {
+      height: 300px;
+      width: 100%; /* Ajusta el ancho para ocupar el 100% de la columna */
+      padding: 5px;
+      margin: 5px;
+  }
+  .products-page h2{
+    font-size: 25px;
+  }
 }
-.product-card {
-    height: 175px;
-    width: 100%; /* Ajusta el ancho para ocupar el 100% de la columna */
-    padding: 5px;
-    margin: 5px;
-}
-.products-page h2{
-  font-size: 25px;
-}
+@media (max-width: 425px) {
+  .nav-products {
+    margin: 0 2%;
+  }
+  .products-display {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
 }
   
   

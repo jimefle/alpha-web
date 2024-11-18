@@ -6,7 +6,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mldrgoqa");
 
   if (state.succeeded) {
-      return <p>Mensaje enviado!</p>;
+    return <p className="success-message">¡Mensaje enviado con éxito!</p>;
   }
 
   return (
@@ -19,6 +19,7 @@ function ContactForm() {
                 required
                 maxLength={50}
                 placeholder='Nombre'
+                aria-label="Nombre completo"
             />
             <label htmlFor="email">Email</label>
             <input
@@ -27,6 +28,7 @@ function ContactForm() {
                 name="email"
                 required
                 placeholder="Email@ejemplo.com"
+                aria-label="Correo electrónico"
                 className="input"
             />
             <ValidationError
@@ -42,6 +44,7 @@ function ContactForm() {
                 name="message"
                 required
                 placeholder="Escribe tu mensaje"
+                aria-label="Tu mensaje"
                 className="textarea"
             />
             <ValidationError
@@ -61,7 +64,8 @@ const Contact = () => {
         <section className="contact-section">
             <div className="contact-hello">
                 <h1>Contactanos!</h1>
-                <h5> Si tenes alguna pregunta o necesitas más información, estamos aquí para responder todas tus consultas.</h5>
+                <h5> Si tenes alguna pregunta o necesitas más información, 
+                    estamos aquí para responder todas tus consultas.</h5>
                 <img src="./src/image/contact-image.png" alt="world image" className='image'/>
             </div>
             <div className="user-info">

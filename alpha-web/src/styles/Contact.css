@@ -6,20 +6,27 @@
   justify-content: center;
   align-items: start;
   text-align: start;
-  gap: 100px;
-
+  gap: 10px;
+  background-color: var(--second-color-50);
 }
 
 .contact-hello{
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
-.contact-hello h1, h5{
+.contact-hello h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--alpha-color-doble);
+}
+.contact-hello h5{
   margin: 0px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: bold;
   color: var(--alpha-color-doble);
@@ -28,6 +35,7 @@
 .contact-hello .image{
   padding:50px 0px;
   width: 100%;
+  object-fit: contain;
 }
 
   .user-info {
@@ -48,6 +56,7 @@
     text-align: start;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 1rem;
   }
   
   .user-info input,
@@ -59,7 +68,15 @@
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
   }
+
+  .user-info input:focus,
+  .user-info textarea:focus {
+    border-color: var(--alpha-color-doble);
+    outline: none;
+}
   
   .user-info textarea{
     height: 100px;
@@ -74,7 +91,7 @@
     color: black;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     transition: background-color 0.5s ease-in-out;
   }
 
@@ -86,24 +103,10 @@
     margin: 5px 0px;
   }
 
-  /* Media query for medium screens */
-  @media (max-width: 1280px) {
-    .contact-section{
-      padding: 45px;
-      gap: 0px;
-    }
-    .user-info {
-      margin-top: 20px;
-      max-width:100%; 
-      padding: 13px;
-    }
-    .user-info h2{
-      font-size: 25px;
-    }
-    .contact-hello .image{
-      padding: 10px 0px;
-      width: 100%;
-    }
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
   }
 
 /* Media query for smaller screens */
@@ -113,18 +116,6 @@
       align-items: center;
       padding: 20px;
       gap: 0px;
-    }
-    .user-info {
-      margin-top: 20px;
-      max-width:100%; 
-      padding: 13px;
-    }
-    .user-info h2{
-      font-size: 25px;
-    }
-    .contact-hello .image{
-      padding: 10px 0px;
-      width: 100%;
     }
   }
 

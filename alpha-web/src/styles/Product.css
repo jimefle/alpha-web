@@ -23,9 +23,9 @@
 
 
 .product-image {
-    height: 100%;
-    width: 100%;
-    object-fit: conver;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 20px;
 }
 
@@ -35,26 +35,5 @@
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .product-card{
-        height: 175px; 
-        width: 150px; 
-        border-radius: 20px;
-        padding: 5px;
-        margin: 5px; 
-    }
-    .product-image {
-        height: 100%;
-        width: 100%;
-        object-fit: conver;
-        border-radius: 5px;
-        padding: 0px;
-    }
-    
-    .product-name {
-        font-size: 13px;
-        padding: 2px;
-    }
+    font-size: 1rem;
 }

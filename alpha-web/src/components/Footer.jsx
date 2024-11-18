@@ -11,10 +11,10 @@ export default function Footer(){
                         Seguinos en nuestras redes sociales
                     </h5>
                     <div className='icons-section'>
-                        <a href="https://instagram.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
+                        <a href="https://instagram.com/alphascope.arg" target="_blank" rel="noopener noreferrer" className='icons'>
                             <FontAwesomeIcon icon={faInstagram} /> 
                         </a>
-                        <a href="https://facebook.com/alphascope" target="_blank" rel="noopener noreferrer" className='icons'>
+                        <a href="https://facebook.com/alphascope.arg" target="_blank" rel="noopener noreferrer" className='icons'>
                             <FontAwesomeIcon icon={faFacebook} /> 
                         </a>
                     </div>

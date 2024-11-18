@@ -11,22 +11,27 @@ const ImageCarousel = () => {
       showThumbs={false}
       showStatus={false}
       centerMode
-      centerSlidePercentage={70}
+      centerSlidePercentage={100}
+      swipeable
+      emulateTouch
+      dynamicHeight
+      useKeyboardArrows
+      ariaLabel="Image Carousel"
     >
       <div  className="carousel-image">
-        <img src="./src/image/carousel1.jpg" alt="Imagen 1" />
+        <img src="./src/image/carousel1.jpg" alt="Equipos médicos para veterinarios" />
         <div className="contenedor">
           <h2 className="carousel-text">Equipos médicos para veterinarios<span>&#160;</span></h2>
         </div>
       </div>
       <div className="carousel-image">
-        <img src="./src/image/carousel2.jpg" alt="Imagen 2" />
+        <img src="./src/image/carousel2.jpg" alt="Endoscopios industriales" />
         <div className="contenedor">
           <h2 className="carousel-text">Endoscopios industriales<span>&#160;</span></h2>
         </div>
       </div>
       <div className="carousel-image">
-        <img src="./src/image/carousel3.jpg" alt="Imagen 3" />
+        <img src="./src/image/carousel3.jpg" alt="Servicios profesionales para profesionales" />
         <div className="contenedor">
           <h2 className="carousel-text">Servicios profesionales para profesionales<span>&#160;</span></h2>
         </div>

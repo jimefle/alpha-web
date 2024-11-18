@@ -2,12 +2,11 @@
 .carousel .slide img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .carousel .carousel-image {
   position: relative;
-  width: 100%;
-  height: auto;  /* Este ajusta el carousel, no las imagenes  */
   overflow: hidden;
 }
 
@@ -17,27 +16,26 @@
 }
 
 .contenedor {
-  color: #fff;
-  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  color: white;
   font-weight: bold;
-  margin: 0;
-  max-width: 80%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  background-color: var(--alpha-color-doble);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 90%;
 }
 
 .carousel .carousel-text {
-  position: absolute;
-  margin: 20px;
-  bottom: 20px; /* Ajusta la posición vertical del texto */
-  left: 20px; /* Ajusta la posición horizontal del texto */
-  color: white; /* Color del texto */
-  background-color: var(--alpha-color-doble);
-  z-index: 2; 
-  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
   text-align: start;
-  padding-left: 20px;
-  border-radius: 50px 0px 0px 50px;
 }
-
 
 .carousel .carousel-image::before,
 .carousel .carousel-image::after {
@@ -48,6 +46,7 @@
   height: 100%;
   z-index: 1;
 }
+
 
 .carousel .carousel-image::before {
   left: 0;
@@ -62,27 +61,34 @@
   color: #ffffff !important; /* Color del ícono de la flecha */
 }
 
-.carousel .control-next.control-arrow {
-  right: 15px !important; /* Posición de la flecha derecha */
+/* puntos */
+.carousel .control-dots .dot {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-.carousel .control-prev.control-arrow {
-  left: 15px !important; /* Posición de la flecha izquierda */
+.carousel .control-dots .dot.selected {
+  background-color: white;
 }
 
-
-/* Media query for  medium screens */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .carousel .carousel-text {
-    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .contenedor {
+    padding: 10px 15px;
   }
 }
-/* Media query for small screens */
-@media (max-width: 800px) {
-  .carousel .carousel-text {
-    font-size: 15px;
-    margin: 5px;
-    padding-right: 10px;
-  }
 
+@media (max-width: 480px) {
+  .carousel .carousel-text {
+    font-size: 1.2rem;
+  }
+  .contenedor {
+    padding: 8px 12px;
+  }
 }
